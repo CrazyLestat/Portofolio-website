@@ -1,3 +1,4 @@
+<?php include 'post.php'?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="head">
             <div class="nav-menu">
                 <img src="logo1.png" class="logo-img">
                 <ul id="nav">
@@ -46,5 +47,17 @@
 
             </p>
         </section>
+
+        <section>
+            <form method="POST" action="post.php" id="controlForm">
+                <input type="text" name="name" placeholder="'name">
+                <input type="email" name="email" placeholder="'email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                <div><?php $alert; ?></div>
+                <button type="submit" name="submit">SEND</button>
+            </form>
+        </section>
+
     </body>
+    <script src="index.js"></script>
 </html>

@@ -85,6 +85,12 @@ ul {
     
 }
 
+#controlForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
 /*ANIMATIONS*/
 @keyframes borderAnimation {
     0% {
@@ -96,4 +102,25 @@ ul {
     100% {
         border-radius: 50% 30% 20% 80% / 50% 50% 40% 50%;
     }
+}
+
+.alert-success {
+    z-index: 1;
+    background-color: #9D00FF;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 40px;
+    width: 100%;
+    border-left: 8px solid #3ad66e;
+    border-radius: 4px;
+}
+.alert-error {
+    z-index: 1;
+    background-color: #ff0000;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 40px;
+    width: 100%;
+    border-left: 8px solid #300303;
+    border-radius: 4px;
 }
