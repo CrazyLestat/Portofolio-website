@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'coquette.tailoring@gmail.com';
-        $mail->Password = 'ozindwealobqoffw';
+        $mail->Password = '';
         $mail->SMTPSecure = 'tls';
         $mail->Port = '587';
 
